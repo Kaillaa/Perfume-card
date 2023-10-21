@@ -1,0 +1,85 @@
+@import url([Montserrat]https://fonts.google.com/specimen/Montserrat);
+@import url([Fraunces]https://fonts.google.com/specimen/Fraunces);
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 800px;
+    height: 600px;
+}
+.imagem{
+    height: 600px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.container .informacoes{
+    text-align: left;
+    padding: 2rem;
+    gap: 5px;
+}
+.container .informacoes .perfume{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight:100;
+    letter-spacing: 5px;
+}
+.container .informacoes .nome-perfume{
+    position: relative;
+    font-size: 3rem;
+    text-align: start;
+    font-family: 'Fraunces', space;
+    word-wrap: break-word;
+    margin-bottom: 1rem;
+}
+.container .informacoes .paragrafo{
+    position: relative;
+    font-size: 18px;
+    text-align: start;
+    font-family: 'Montserrat', sans-serif ;
+    word-wrap: break-word;
+    opacity: 50%;
+}
+
+.container .precos{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -3rem;
+}
+
+.container .preco-atual{
+    font-size: 3rem;
+    font-family:'Fraunces', space ;
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+}
+.container .preco-anterior{
+    font-family:'Fraunces', space;
+    position: relative;
+    left: 20px;
+    text-decoration: line-through;
+}
+.container .botao .meu-botao{
+    position: relative;
+    top: -4rem;
+    left: 45px;
+    width: 250px;
+    height: 50px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 5px;
+    color: white;
+    border: transparent;
+}
+.container .botao .meu-botao:hover{
+    transform: scaleY(-5px);
+    transition: all .3s ease-in;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+}
